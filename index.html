@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="te">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trade With Munaf | Premium Trading Community</title>
+<title>Trade With Munaf</title>
 
 <script>
 !function(f,b,e,v,n,t,s)
@@ -18,175 +18,138 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '926687006475396'); 
 fbq('track', 'PageView');
 </script>
+
 <noscript>
 <img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=926687006475396&ev=PageView&noscript=1"/>
 </noscript>
 <style>
-    :root {
-        --primary-color: #00f2fe;
-        --accent-color: #4facfe;
-        --bg-dark: #0a0f1d;
-    }
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        background: var(--bg-dark);
-        color: #ffffff;
-        display: flex;
-        justify-content: center;
-        min-height: 100vh;
-    }
-    .main-wrapper {
-        width: 100%;
-        max-width: 420px;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    .glass-card {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 28px;
-        padding: 30px 20px;
-        text-align: center;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    }
-    .profile-circle {
-        width: 120px;
-        height: 120px;
-        margin: 0 auto 15px;
-        position: relative;
-    }
-    .profile-circle img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid var(--primary-color);
-        padding: 4px;
-    }
-    .online-indicator {
-        width: 16px;
-        height: 16px;
-        background: #00ff88;
-        border-radius: 50%;
-        position: absolute;
-        bottom: 8px;
-        right: 8px;
-        border: 3px solid #121a2d;
-        animation: pulse 1.5s infinite;
-    }
-    @keyframes pulse {
-        0% { transform: scale(1); opacity: 1; }
-        50% { transform: scale(1.2); opacity: 0.7; }
-        100% { transform: scale(1); opacity: 1; }
-    }
-    h1 { font-size: 22px; margin: 10px 0 5px; color: var(--primary-color); letter-spacing: 0.5px; }
-    .verified { font-size: 14px; color: #a0aec0; margin-bottom: 20px; display: block; }
-    
-    .stats-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        margin: 20px 0;
-    }
-    .stat-box {
-        background: rgba(255, 255, 255, 0.05);
-        padding: 12px;
-        border-radius: 15px;
-    }
-    .stat-box span { display: block; font-size: 18px; font-weight: bold; color: #fff; }
-    .stat-box small { font-size: 11px; color: #718096; }
-
-    .bullet-points { text-align: left; margin: 20px 0; }
-    .point { display: flex; align-items: center; margin-bottom: 12px; font-size: 15px; color: #e2e8f0; }
-    .point i { color: var(--primary-color); margin-right: 12px; font-size: 18px; }
-
-    .join-btn {
-        background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-        color: #000;
-        text-decoration: none;
-        display: block;
-        padding: 18px;
-        border-radius: 16px;
-        font-weight: 800;
-        font-size: 18px;
-        margin-top: 25px;
-        box-shadow: 0 10px 20px rgba(0, 242, 254, 0.2);
-        transition: 0.3s;
-        border: none;
-        width: 100%;
-        cursor: pointer;
-    }
-    .join-btn:active { transform: scale(0.96); }
-
-    .timer { color: #ff5e5e; font-size: 13px; font-weight: bold; margin-top: 15px; }
-    .footer-note { font-size: 10px; color: #4a5568; margin-top: 25px; line-height: 1.4; }
+body{
+margin:0;
+background:#f2f2f2;
+font-family:Arial, sans-serif;
+text-align:center;
+}
+.container{
+max-width:420px;
+margin:auto;
+padding:20px;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+.topbtn{
+background:#1e88e5;
+color:#fff;
+padding:14px;
+border-radius:12px;
+font-weight:bold;
+margin-bottom:20px;
+cursor:pointer;
+}
+.profile{
+width:150px;
+height:150px;
+border-radius:50%;
+border:6px solid #1e88e5;
+margin:auto;
+overflow:hidden;
+}
+.profile img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+h2{
+color:#1e88e5;
+margin:15px 0 5px;
+}
+.points{
+background:#e3f2fd;
+padding:12px;
+border-radius:12px;
+margin:10px 0;
+font-weight:bold;
+}
+.joinbtn{
+background:#1e88e5;
+color:#fff;
+padding:15px;
+border-radius:12px;
+font-weight:bold;
+margin-top:15px;
+cursor:pointer;
+}
+.timer{
+margin-top:15px;
+color:red;
+font-weight:bold;
+}
 </style>
 </head>
+
 <body>
 
-<div class="main-wrapper">
-    <div class="glass-card">
-        <div class="profile-circle">
-            <img src="logo.png" alt="Trade With Munaf">
-            <div class="online-indicator"></div>
-        </div>
+<div class="container">
+<div class="card">
 
-        <h1>TRADE WITH MUNAF</h1>
-        <span class="verified">తెలుగు ట్రేడింగ్ ఎక్స్‌పర్ట్ ✅</span>
+<div class="topbtn" onclick="redirectNow()">
+JOIN TELEGRAM CHANNEL
+</div>
 
-        <div class="stats-container">
-            <div class="stat-box"><span>95%+</span><small>అక్యూరసీ</small></div>
-            <div class="stat-box"><span>DAILY</span><small>ప్రాఫిట్ కాల్స్</small></div>
-        </div>
+<div class="profile">
+<img src="logo.png" alt="Trade With Munaf">
+</div>
 
-        <div class="bullet-points">
-            <div class="point">💎 <span>బ్యాంక్ నిఫ్టీ & నిఫ్టీ జాక్‌పాట్ కాల్స్</span></div>
-            <div class="point">📊 <span>లైవ్ మార్కెట్ అనాలిసిస్ & సపోర్ట్</span></div>
-            <div class="point">💸 <span>లాస్ రికవరీ స్పెషల్ స్ట్రాటజీస్</span></div>
-        </div>
+<h2>📊 Trade With Munaf 📊</h2>
+<p>⚡ Intraday Trader | Market Analysis | Telugu ⚡</p>
 
-        <button class="join-btn" onclick="ctaRedirect()">
-            JOIN FREE TELEGRAM NOW
-        </button>
+<div class="points">📈 Live Market Updates</div>
+<div class="points">📊 Intraday & Swing Analysis</div>
+<div class="points">💡 Learn & Grow Daily</div>
+<div class="points">🔥 Trusted Trading Community</div>
 
-        <div class="timer" id="timer">ఆఫర్ 15 సెకన్లలో ముగుస్తుంది...</div>
+<div class="joinbtn" onclick="redirectNow()">
+JOIN TELEGRAM CHANNEL
+</div>
 
-        <div class="footer-note">
-            డిస్క్లైమర్: మేము SEBI రిజిస్టర్డ్ కాదు. షేర్ మార్కెట్ పెట్టుబడులు రిస్క్ తో కూడుకున్నవి. కేవలం ఎడ్యుకేషన్ కోసం మాత్రమే.
-        </div>
-    </div>
+<div class="timer" id="timer">
+Offer closes in 15 seconds
+</div>
+
+</div>
 </div>
 
 <script>
-    let timeLeft = 15;
-    let isClicked = false;
-    const telegramLink = "https://t.me/+Ayi5unj1GktjZjk9";
+let seconds = 15;
+let redirected = false;
+let link = "https://t.me/+Ayi5unj1GktjZjk9";
 
-    function ctaRedirect() {
-        if (!isClicked) {
-            isClicked = true;
-            // FIX: Sending Value and Currency to remove Meta Pixel Errors
-            fbq('track', 'Lead', {
-                value: 1.00,
-                currency: 'INR'
-            });
-            window.location.replace(telegramLink);
-        }
+let countdown = setInterval(function(){
+    if(redirected) return;
+    seconds--;
+    document.getElementById("timer").innerHTML = "Offer closes in " + seconds + " seconds";
+
+    if(seconds <= 0){
+        redirected = true;
+        clearInterval(countdown);
+        // FIXED ERROR: Added Currency and Value for smooth Ads
+        fbq('track','Lead', {value: 1.00, currency: 'INR'}); 
+        window.location.replace(link);
     }
+},1000);
 
-    const timerElement = document.getElementById('timer');
-    const countdown = setInterval(() => {
-        timeLeft--;
-        timerElement.innerText = `ఆఫర్ ${timeLeft} సెకన్లలో ముగుస్తుంది...`;
-        if (timeLeft <= 0) {
-            clearInterval(countdown);
-            ctaRedirect();
-        }
-    }, 1000);
+function redirectNow(){
+    if(!redirected){
+        redirected = true;
+        // FIXED ERROR: Added Currency and Value for smooth Ads
+        fbq('track','Lead', {value: 1.00, currency: 'INR'}); 
+        window.location.replace(link);
+    }
+}
 </script>
 
 </body>
