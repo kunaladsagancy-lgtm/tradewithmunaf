@@ -15,10 +15,12 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '926687006475396'); // Naya Pixel ID Add Kar Diya
+fbq('init', '26538516765753715'); 
 fbq('track', 'PageView');
 </script>
-
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=26538516765753715&ev=PageView&noscript=1"
+/></noscript>
 <style>
     :root {
         --primary: #00d2ff;
@@ -179,11 +181,16 @@ fbq('track', 'PageView');
     function doRedirect() {
         if (!isRedirected) {
             isRedirected = true;
-            // CURRENCY & VALUE FIX FOR META ADS
-            fbq('track', 'Lead', {
-                value: 1.00,
-                currency: 'INR'
-            });
+            // FIXED: Added Value & Currency to solve Meta Ads Diagnostics Error
+            try {
+                if (typeof fbq === "function") {
+                    fbq('track', 'Lead', {
+                        value: 1.00,
+                        currency: 'INR'
+                    });
+                }
+            } catch(e) {}
+            
             window.location.replace(link);
         }
     }
